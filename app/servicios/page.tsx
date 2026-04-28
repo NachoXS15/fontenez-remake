@@ -42,7 +42,7 @@ export default function Services() {
                 <div className="hidden md:block w-full h-4/5 md:w-1/2 bg-slate-200">
                     <img src="/assets/banners/banner2.jpg" className="w-full" alt="" />
                 </div>
-                <div className="w-full min-h-fit md:h-4/5 md:w-1/2 flex flex-col items-center md:items-end md:justify-center">
+                <div className="w-full min-h-fit md:h-4/5 md:w-1/2 flex flex-col items-center md:items-end md:justify-center" style={{fontFamily: 'jubilat'}}>
                     <h2 className="text-5xl text-white bg-purplemain text-center w-full md:w-fit px-14 py-2">{selectedService.title}</h2>
                     <p className="text-center md:text-end font-light tracking-wider text-3xl px-2 md:px-0 mt-10">{selectedService.display}</p>
                 </div>
