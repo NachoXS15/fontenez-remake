@@ -3,7 +3,6 @@ import Layout from "@/components/Layout";
 export default function About() {
     return (
         <Layout>
-            {/* Hero Gallery */}
             <section className="w-full h-150 flex gap-1 overflow-hidden">
                 <div className="flex flex-col gap-1 w-2/5">
                     <div className="flex gap-1 h-1/2">
@@ -127,7 +126,7 @@ export default function About() {
                         style={{ backgroundImage: `url(/assets/banners/banner7.jpg)` }}
                     >
                         {/* Overlay degradado desde abajo */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                        <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent" />
                         <div className="relative z-10 px-8 py-7 w-full">
                             <div className="flex items-center gap-3 mb-3">
                                 <div className="h-px w-8 bg-amber-400/60" />

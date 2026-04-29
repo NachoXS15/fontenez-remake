@@ -27,9 +27,9 @@ export default function Header() {
 
     return (
         <>
-            <header className='bg-purplemain text-white flex justify-between items-center py-6 px-12 md:py-4 md:px-7 md:justify-around select-none drop-shadow-sm' style={{ fontFamily: 'jubilat' }}>
+            <header className='bg-purplemain text-white flex justify-between items-center py-4 px-12 md:py-4 md:px-7 md:justify-around select-none drop-shadow-sm' style={{ fontFamily: 'jubilat' }}>
                 <Link href="/" className="inline md:hidden">
-                    <Image src="/assets/iso_blanco.png" width={56} height={56} className="w-14 md:w-10 hover:scale-105 transition" alt="" />
+                    <Image src="/assets/iso_blanco.png" width={30} height={30} className="w-10 md:w-10 hover:scale-105 transition" alt="" />
                 </Link>
                 <nav className='hidden md:flex w-full px-10 lg:px-44 xl:px-64 justify-between items-center'>
                     <Link className="mx-5 text-lg text-bluemain md:hover:scale-105 transition" style={{ fontFamily: 'Mundial' }} href="/servicios">Servicios</Link>
@@ -48,12 +48,12 @@ export default function Header() {
                 </div>
             </header>
             {isClick && (
-                <div className='md:hidden bg-slate-200 h-fit py-9 bottom-0'>
-                    <hr className='w-4/5 m-auto border border-purplemain' />
+                <div className='md:hidden bg-slate-200 h-fit py-3 bottom-0'>
+                    <hr className='w-4/5 mt-4 m-auto border border-purplemain' />
                     <div className='flex flex-col mt-3 px-10' style={{ fontFamily: 'quador' }}>
-                        <Link className="hover:scale-105 transition my-2 mx-2 text-xl text-purplemain" href="/servicios">Servicios</Link>
-                        {/* <Link className="hover:scale-105 transition my-2 mx-2 text-xl text-purplemain" href="/productos">Productos</Link> */}
-                        <Link className="hover:scale-105 transition my-2 mx-2 text-xl text-purplemain" href="/about">Nosotros</Link>
+                        <Link className="hover:scale-105 transition my-2 mx-2 text-purplemain" href="/servicios">Servicios</Link>
+                        {/* <Link className="hover:scale-105 transition my-2 mx-2 text-purplemain" href="/productos">Productos</Link> */}
+                        <Link className="hover:scale-105 transition my-2 mx-2 text-purplemain" href="/about">Nosotros</Link>
                         {/* <form onSubmit={handleSubmit} className="w-full mt-2 flex items-center gap-2">
                             <input type="text" name="search" className="w-full h-7 pb-1 rounded-full px-5 border border-blue-800 text-gray-700 active:outline-none" placeholder="Buscar..." />
                             <button type="submit"><Search color="#1e40af" size={24}/></button>

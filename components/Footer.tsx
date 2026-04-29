@@ -5,9 +5,9 @@ import Link from "next/link";
 export default function Footer() {
     return (
         <>
-            <footer className="w-full h-fit py-10 flex flex-col items-start md:items-center px-10 gap-14 bg-purplemain text-white font-montserrat">
+            <footer className="w-full h-fit py-10 flex flex-col items-start md:items-center px-10 gap-14 bg-purplemain text-white font-montserrat" style={{ fontFamily: 'jubilat' }}>
                 <div className="flex flex-col md:flex-row items-start justify-center gap-10 md:justify-between lg:gap-20 xl:gap-44">
-                    <Image src={logo} width={300} alt="logo" />
+                    <Image src={logo} width={300} alt="logo" className="self-center" />
                     <div className="flex flex-col gap-5">
                         <h2 className="font-bold text-xl">Contacto</h2>
                         <div className="flex flex-col items-start">
@@ -21,10 +21,10 @@ export default function Footer() {
                             </div>
                         </div>
                         <ul className="flex items-center gap-5">
-                            <Link href="/" className="hover:scale-125 transition">
+                            <Link href="https://www.instagram.com/fontenezjoyas/" className="hover:scale-125 transition">
                                 <Instagram />
                             </Link>
-                            <Link href="/" className="hover:scale-125 transition">
+                            <Link href="https://www.facebook.com/fontenezjoyas" className="hover:scale-125 transition">
                                 <Facebook  />
                             </Link>
                         </ul>
@@ -32,8 +32,8 @@ export default function Footer() {
                     <div className="flex flex-col gap-5">
                         <h2 className="font-bold text-xl">Empresa</h2>
                         <div className="flex flex-col gap-2">
-                            <Link href="" className="hover:bg-white hover:text-darkblue px-2 transition">Nosotros</Link>
-                            <Link href="" className="hover:bg-white hover:text-darkblue px-2 transition">Servicios</Link>
+                            <Link href="/about" className="hover:bg-white hover:text-darkblue px-2 transition">Nosotros</Link>
+                            <Link href="/servicios" className="hover:bg-white hover:text-darkblue px-2 transition">Servicios</Link>
                             <Link href="" className="hover:bg-white hover:text-darkblue px-2 transition">Productos</Link>
                         </div>
                     </div>
@@ -45,7 +45,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <p>Fonteñez Joyas | Todos los derechos reservados - 2024</p>
+                <p className="text-center">Fonteñez Joyas | Todos los derechos reservados - 2024</p>
             </footer>
         </>
     )
