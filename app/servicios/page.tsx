@@ -120,13 +120,15 @@ export default function Services() {
             <section className="w-full px-5 md:px-14 pb-24 flex flex-col md:flex-row gap-0 items-stretch">
                 {/* Imagen */}
                 <div className="hidden md:block w-full md:w-1/2 overflow-hidden relative">
-                    <img
+                    <Image
                         src="/assets/banners/banner2.jpg"
                         className="w-full h-full object-cover"
                         alt={selectedService.title}
+                        width={200}
+                        height={200}
                     />
                     {/* Overlay esquina */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent to-slate-50/10" />
+                    <div className="absolute inset-0 bg-linear-to-r from-transparent to-slate-50/10" />
                 </div>
  
                 {/* Texto */}
