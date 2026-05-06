@@ -52,7 +52,7 @@ export default function Services() {
                     <Image src="/assets/logo.png" width={260} height={104} alt="Fonteñez Joyas" className="drop-shadow-2xl" />
                     <DiamondDivider />
                     <p
-                        className="text-white/70 text-xl tracking-[0.45em] uppercase mt-2"
+                        className="text-white/70 text-sm md:text-xl tracking-[0.45em] uppercase mt-2"
                         style={{ fontFamily: 'jubilat' }}
                     >
                         Servicios
@@ -71,7 +71,7 @@ export default function Services() {
                 {/* Título */}
                 <div className="flex flex-col items-center mb-14 gap-4">
                     <p className="text-xs tracking-[0.4em] uppercase text-amber-700">Lo que ofrecemos</p>
-                    <h2 className="text-4xl md:text-5xl text-blue-900 font-bold tracking-wide text-center">
+                    <h2 className="text-2xl md:text-4xl lg:text-5xl text-blue-900 font-medium tracking-wide text-center">
                         Nuestros Servicios
                     </h2>
                     <DiamondDivider />
@@ -96,7 +96,7 @@ export default function Services() {
                                 {/* Acento dorado superior */}
                                 <div className={`absolute top-0 left-6 right-6 h-px transition-all duration-300 ${isSelected ? 'bg-amber-400/60' : 'bg-amber-600/20 group-hover:bg-amber-600/40'}`} />
  
-                                <h3 className={`text-xl font-bold mb-3 tracking-wide ${isSelected ? 'text-white' : 'text-purplemain'}`}>
+                                <h3 className={`text-base md:text-xl font-medium mb-3 tracking-wide ${isSelected ? 'text-white' : 'text-purplemain'}`}>
                                     {service.title}
                                 </h3>
                                 <p className={`text-sm leading-relaxed ${isSelected ? 'text-white/75' : 'text-gray-500'}`}>
@@ -119,14 +119,8 @@ export default function Services() {
             {/* Detalle del servicio seleccionado */}
             <section className="w-full px-5 md:px-14 pb-24 flex flex-col md:flex-row gap-0 items-stretch">
                 {/* Imagen */}
-                <div className="hidden md:block w-full md:w-1/2 overflow-hidden relative">
-                    <Image
-                        src="/assets/banners/banner2.jpg"
-                        className="w-full h-full object-cover"
-                        alt={selectedService.title}
-                        width={200}
-                        height={200}
-                    />
+                <div className="hidden md:block w-full md:w-1/2 overflow-hidden relative bg-center" style={{ backgroundImage: `url(/assets/banners/banner2.jpg)` }}>
+                
                     {/* Overlay esquina */}
                     <div className="absolute inset-0 bg-linear-to-r from-transparent to-slate-50/10" />
                 </div>
@@ -146,13 +140,13 @@ export default function Services() {
                         <p className="text-xs tracking-[0.35em] uppercase text-amber-700">Servicio</p>
                     </div>
  
-                    <h2 className="text-4xl md:text-5xl font-bold text-blue-900 leading-tight">
+                    <h2 className="text-2xl md:text-4xl lg:text-5xl font-medium text-blue-900 leading-tight">
                         {selectedService.title}
                     </h2>
  
                     <div className="h-px w-16 bg-purplemain/20" />
  
-                    <p className="text-gray-600 text-xl leading-relaxed tracking-wide font-light">
+                    <p className="text-gray-600 text-base md:text-xl leading-relaxed tracking-wide font-light">
                         {selectedService.display}
                     </p>
  

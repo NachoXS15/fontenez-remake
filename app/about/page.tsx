@@ -22,7 +22,7 @@ export default function About() {
                 </div>
                 <div
                     className="w-3/5 h-full bg-center bg-cover transition-transform duration-700 overflow-hidden relative"
-                    style={{ backgroundImage: `url(/assets/banners/banner3.jpg)` }}
+                    style={{ backgroundImage: `url(/assets/banners/banner2.jpg)` }}
                 >
                     {/* Overlay dorado sutil */}
                     <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-black/30" />
@@ -50,13 +50,13 @@ export default function About() {
                     Desde 1924
                 </p>
                 <h2
-                    className="text-5xl md:text-6xl text-center text-blue-900 font-bold"
+                    className="text-3xl md:text-5xl lg:text-6xl text-center text-blue-900 font-medium"
                     style={{ fontFamily: 'jubilat', letterSpacing: '0.04em', lineHeight: 1.1 }}
                 >
                     Nuestra Historia
                 </h2>
                 <p
-                    className="text-lg text-blue-800/60 mt-4 tracking-widest"
+                    className="text-base md:text-lg text-blue-800/60 mt-4 tracking-widest"
                     style={{ fontFamily: 'jubilat' }}
                 >
                     Conocé un poco más
@@ -80,7 +80,7 @@ export default function About() {
             >
                 {/* Texto introductorio */}
                 <div className="max-w-3xl mx-auto mt-40 text-center">
-                    <p className="text-white text-xl lg:text-2xl leading-relaxed tracking-wide">
+                    <p className="text-white text-base lg:text-xl xl:text-2xl font-normal leading-relaxed tracking-wide">
                         Fonteñez Joyas es una empresa familiar, fundada por Pedro Fonteñez, comenzó
                         abriendo un taller de orfebrería en el año 1924. Un hombre apasionado del arte,
                         y del trabajo, que pudo inculcar ese amor por la platería a sus hijos.
@@ -132,7 +132,7 @@ export default function About() {
                                 <div className="h-px w-8 bg-amber-400/60" />
                                 <div className="w-1 h-1 rounded-full bg-amber-400/60" />
                             </div>
-                            <p className="text-white text-lg md:text-2xl leading-snug max-w-2xl" style={{ fontFamily: 'jubilat' }}>
+                            <p className="text-white text-sm md:text-lg lg:text-2xl leading-snug max-w-2xl" style={{ fontFamily: 'jubilat' }}>
                                 El mismo enseña a su hijo Pedro, el cual sigue sus pasos creando, innovando,
                                 y trabajando con pasión y dedicación para continuar esa línea de plateros-orfebres.
                             </p>
