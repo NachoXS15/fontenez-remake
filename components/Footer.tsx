@@ -45,7 +45,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <p className="text-center">Fonteñez Joyas | Todos los derechos reservados - 2024</p>
+                <p className="text-center">Fonteñez Joyas | Todos los derechos reservados - 2026</p>
             </footer>
         </>
     )

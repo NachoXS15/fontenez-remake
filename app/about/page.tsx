@@ -3,7 +3,26 @@ import Layout from "@/components/Layout";
 export default function About() {
     return (
         <Layout>
-            <section className="w-full h-150 flex gap-1 overflow-hidden">
+            {/* Layout mobile */}
+            <section className="flex flex-col gap-1 overflow-hidden md:hidden">
+                <div
+                    className="w-full h-72 bg-center bg-cover"
+                    style={{ backgroundImage: `url(/assets/banners/banner2.jpg)` }}
+                />
+                <div className="flex gap-1 h-44">
+                    <div
+                        className="w-1/2 h-full bg-center bg-cover"
+                        style={{ backgroundImage: `url(/assets/banners/banner1.jpg)` }}
+                    />
+                    <div
+                        className="w-1/2 h-full bg-center bg-cover"
+                        style={{ backgroundImage: `url(/assets/banners/banner4.jpg)` }}
+                    />
+                </div>
+            </section>
+
+            {/* Layout desktop */}
+            <section className="hidden md:flex w-full h-150 gap-1 overflow-hidden">
                 <div className="flex flex-col gap-1 w-2/5">
                     <div className="flex gap-1 h-1/2">
                         <div
@@ -24,7 +43,6 @@ export default function About() {
                     className="w-3/5 h-full bg-center bg-cover transition-transform duration-700 overflow-hidden relative"
                     style={{ backgroundImage: `url(/assets/banners/banner2.jpg)` }}
                 >
-                    {/* Overlay dorado sutil */}
                     <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-black/30" />
                 </div>
             </section>
@@ -79,7 +97,7 @@ export default function About() {
                 }}
             >
                 {/* Texto introductorio */}
-                <div className="max-w-3xl mx-auto mt-40 text-center">
+                <div className="max-w-3xl mx-auto mt-20 text-center">
                     <p className="text-white text-base lg:text-xl xl:text-2xl font-normal leading-relaxed tracking-wide">
                         Fonteñez Joyas es una empresa familiar, fundada por Pedro Fonteñez, comenzó
                         abriendo un taller de orfebrería en el año 1924. Un hombre apasionado del arte,
